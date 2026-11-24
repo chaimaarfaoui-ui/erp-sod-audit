@@ -1,0 +1,11 @@
+rule_id,perm_a,perm_b,risk_description,impact,likelihood
+R01,CREATE_VENDOR,APPROVE_PAYMENT,Fictitious vendor creation and payment (fraud),5,3
+R02,CREATE_VENDOR,EXECUTE_PAYMENT,Fictitious vendor creation and payment execution,5,3
+R03,CREATE_PO,APPROVE_PO,Self-approval of purchase orders,4,4
+R04,CREATE_PO,RECEIVE_GOODS,Ordering and confirming receipt of own orders,4,3
+R05,POST_INVOICE,APPROVE_PAYMENT,Posting and approving own invoices,4,3
+R06,APPROVE_PAYMENT,EXECUTE_PAYMENT,Approving and releasing payments alone,5,3
+R07,POST_JOURNAL,APPROVE_JOURNAL,Self-approved journal entries (financial misstatement),5,3
+R08,MAINTAIN_BANK_DETAILS,EXECUTE_PAYMENT,Changing bank details and paying to them,5,4
+R09,MAINTAIN_USERS,POST_JOURNAL,Admin can grant themselves access and post entries,4,2
+R10,MAINTAIN_USERS,APPROVE_PAYMENT,Admin can grant themselves payment approval,5,2

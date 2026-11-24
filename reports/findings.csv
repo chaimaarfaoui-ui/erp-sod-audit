@@ -1,0 +1,15 @@
+user_id,name,department,rule_id,perm_a,perm_b,roles_giving_a,roles_giving_b,cause,risk_description,impact,likelihood,risk_score,risk_level
+U09,Ines,Treasury,R08,MAINTAIN_BANK_DETAILS,EXECUTE_PAYMENT,VENDOR_MASTER,TREASURY,ROLE COMBINATION,Changing bank details and paying to them,5,4,20,CRITICAL
+U06,Youssef,Procurement,R03,CREATE_PO,APPROVE_PO,BUYER,PO_APPROVER,ROLE COMBINATION,Self-approval of purchase orders,4,4,16,HIGH
+U02,Karim,Accounting,R01,CREATE_VENDOR,APPROVE_PAYMENT,AP_CLERK,AP_MANAGER,ROLE COMBINATION,Fictitious vendor creation and payment (fraud),5,3,15,HIGH
+U09,Ines,Treasury,R02,CREATE_VENDOR,EXECUTE_PAYMENT,VENDOR_MASTER,TREASURY,ROLE COMBINATION,Fictitious vendor creation and payment execution,5,3,15,HIGH
+U10,Walid,Finance,R06,APPROVE_PAYMENT,EXECUTE_PAYMENT,SUPER_FINANCE,SUPER_FINANCE,ROLE DESIGN,Approving and releasing payments alone,5,3,15,HIGH
+U12,Tarek,Finance,R07,POST_JOURNAL,APPROVE_JOURNAL,GL_ACCOUNTANT,FINANCE_CONTROLLER,ROLE COMBINATION,Self-approved journal entries (financial misstatement),5,3,15,HIGH
+U20,Yasmine,Accounting,R01,CREATE_VENDOR,APPROVE_PAYMENT,AP_CLERK,SUPER_FINANCE,ROLE COMBINATION,Fictitious vendor creation and payment (fraud),5,3,15,HIGH
+U20,Yasmine,Accounting,R02,CREATE_VENDOR,EXECUTE_PAYMENT,AP_CLERK,SUPER_FINANCE,ROLE COMBINATION,Fictitious vendor creation and payment execution,5,3,15,HIGH
+U20,Yasmine,Accounting,R06,APPROVE_PAYMENT,EXECUTE_PAYMENT,SUPER_FINANCE,SUPER_FINANCE,ROLE DESIGN,Approving and releasing payments alone,5,3,15,HIGH
+U02,Karim,Accounting,R05,POST_INVOICE,APPROVE_PAYMENT,AP_CLERK,AP_MANAGER,ROLE COMBINATION,Posting and approving own invoices,4,3,12,MEDIUM
+U04,Omar,Procurement,R04,CREATE_PO,RECEIVE_GOODS,BUYER,WAREHOUSE,ROLE COMBINATION,Ordering and confirming receipt of own orders,4,3,12,MEDIUM
+U20,Yasmine,Accounting,R05,POST_INVOICE,APPROVE_PAYMENT,AP_CLERK,SUPER_FINANCE,ROLE COMBINATION,Posting and approving own invoices,4,3,12,MEDIUM
+U17,Fares,Finance,R10,MAINTAIN_USERS,APPROVE_PAYMENT,IT_ADMIN,AP_MANAGER,ROLE COMBINATION,Admin can grant themselves payment approval,5,2,10,MEDIUM
+U15,Amine,IT,R09,MAINTAIN_USERS,POST_JOURNAL,IT_ADMIN,GL_ACCOUNTANT,ROLE COMBINATION,Admin can grant themselves access and post entries,4,2,8,LOW
